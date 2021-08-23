@@ -1,0 +1,27 @@
+/*
+Styles define global variables for styling
+
+*/
+:root {
+    // Font sizes
+    --note-font-size: 14px;
+    --paragraph-font-size: 16px;
+    --subheader-font-size: 20px;
+    --header-font-size: 24px;
+
+    // Font color scheme
+    --primary-font-color: #ffffff;
+    --secondary-font-color: #000000;
+
+    // Color layout scheme
+    --primary-faint-color: #484848; // Mainly used as a border color
+    --primary-light-color: #707070; // Mainly for icons
+    --primary-base-color: #212121; // Back drop
+    --primary-dark-color: #000000; // Main content
+
+    // Color for button or events
+    --secondary-light-color: #6af2ff;
+    --secondary-base-color: #00BFFF;
+    --secondary-dark-color: #007FFF; 
+
+}

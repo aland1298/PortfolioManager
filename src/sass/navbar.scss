@@ -1,0 +1,20 @@
+#list {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: inherit;
+    user-select: none;
+
+    &:hover {
+      border-left: 2px solid var(--secondary-base-color);
+      background-image: linear-gradient(to right, rgb(106, 242, 255, .2), rgb(106, 242, 255, .01));
+    }
+  }
+}
