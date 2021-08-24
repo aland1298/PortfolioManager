@@ -13,13 +13,13 @@ import Header from "../components/header";
 const StockPortfolio = () => {
     return (
         <main>
-            <section id="nav-container">
-                <MainNav />
-            </section>
+            <header id="header-container">
+                <Header title="Home" />
+            </header>
             <section id="component-container">
-                <header id="header-container">
-                    <Header title="Home" />
-                </header>
+                <section id="nav-container">
+                    <MainNav />
+                </section>
                 <div id="route-container">
                     <Route path="/" exact component={Home} />
                     <Route path="/home" exact component={Home} />

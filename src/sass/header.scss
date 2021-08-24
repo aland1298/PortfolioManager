@@ -1,6 +1,27 @@
-header {
-  h1 {
-    font-size: var(--header-font-size);
-    color: var(--primary-font-color);
+#header-container {
+  width: 100%;
+
+  #header-list-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    li {
+      #link {
+        font-size: var(--header-font-size);
+        color: var(--primary-font-color);
+        text-decoration: none;
+        margin-left: 20px;
+        user-select: none;
+      }
+
+      h1 {
+        font-size: var(--header-font-size);
+        color: var(--primary-font-color);
+        position: absolute;
+        left: 50%;
+        user-select: none;
+      }
+    }
   }
 }
