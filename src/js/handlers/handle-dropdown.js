@@ -4,12 +4,19 @@
  * with visibility of visible.
  */
 const handleDropdown = () => {
-    const element = document.getElementById("dropdown-container");
+    const dropDownList = document.getElementById("dropdown-container");
+    const arrowImg = document.getElementById("arrow-img");
 
-    if (element.className === "dropdown")
-        element.className = "dropdown show";
-    else
-        element.className = "dropdown";
+    if (dropDownList.className === "dropdown") {
+        dropDownList.className = "dropdown show";
+        arrowImg.setAttribute("src", "/src/img/arrow-up.svg");
+        arrowImg.setAttribute("alt", "up arrow");
+    }
+    else {
+        dropDownList.className = "dropdown";
+        arrowImg.setAttribute("src", "/src/img/arrow-down.svg");
+        arrowImg.setAttribute("alt", "dropdown arrow");
+    }
 }
 
 export default handleDropdown;

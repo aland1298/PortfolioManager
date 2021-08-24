@@ -8,7 +8,7 @@
 
     header {
       border: 2px solid var(--primary-faint-color);
-      border-radius: 20px;
+      border-radius: 15px 15px 1px 1px;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -30,6 +30,11 @@
       align-items: center;
       flex-direction: column;
       visibility: hidden;
+      border-radius: 1px 1px 15px 15px;
+      border-left: 1px solid var(--primary-faint-color);
+      border-right: 1px solid var(--primary-faint-color);
+      border-bottom: 1px solid var(--primary-faint-color);
+      background-color: rgb(33, 33, 33, .4);
 
       &.show {
         visibility: visible;
@@ -39,16 +44,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 100%;
         padding: 10px;
-        border-bottom: 1px solid var(--secondary-dark-color);
         user-select: none;
         cursor: pointer;
 
         &:hover {
+          border-left: 1px solid white;
+          background-image: linear-gradient(to right, rgb(255, 255, 255, .01),
+                  rgb(33, 33, 33, .4), rgb(255, 255, 255, .01));
+          border-right: 1px solid white;
           font-weight: bold;
-          border-bottom: 2px solid var(--secondary-base-color);
-          background-image: linear-gradient(to top, rgb(106, 242, 255, .1), rgb(106, 242, 255, .01));
+
+          &:last-child {
+            border-radius: 1px 1px 15px 15px;
+          }
         }
       }
     }

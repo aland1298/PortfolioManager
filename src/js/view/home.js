@@ -14,7 +14,7 @@ const Home = () => {
                     <span className="navigation" aria-haspopup="true">
                         Select a Client
                     </span>
-                    <img src="/src/img/arrow-down.svg" alt="dropdown arrow" />
+                    <img id="arrow-img" src="/src/img/arrow-down.svg" alt="dropdown arrow" />
                 </header>
                 <ul id="dropdown-container" className="dropdown" aria-label="submenu">
                     <li>Alan</li>
