@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Alan",
+    "ticker": [
+      "AAPL",
+      "MSFT",
+      "GOOG",
+      "FB"
+    ]
+  },
+  {
+    "name": "Madison",
+    "ticker": [
+      "TSLA",
+      "AAPL",
+      "V"
+    ]
+  },
+  {
+    "name": "Tim",
+    "ticker": [
+      "JPM",
+      "BAC",
+      "ADBE",
+      "AAPL"
+    ]
+  },
+  {
+    "name": "Seth",
+    "ticker": [
+      "APPL",
+      "FB"
+    ]
+  },
+  {
+    "name": "Mark",
+    "ticker": [
+      "TSLA",
+      "V"
+    ]
+  },
+  {
+    "name": "Joe",
+    "ticker": []
+  }
+]

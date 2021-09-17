@@ -1,12 +1,13 @@
 import React, {useEffect} from "react";
 
-const Client = () => {
+const Client = (props) => {
     useEffect(() => {
-        document.title = "Client Dashboard"
+        document.title = "Client Dashboard";
+        props.setHeader("Client")
     })
 
     return (
-        <h5>client view</h5>
+        <h1>Hi</h1>
     )
 }
 

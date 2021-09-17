@@ -45,7 +45,12 @@ module.exports = {
     // Tells Webpack where to emit the minified files it creates and how to name these files
     output: {
         filename: 'stock-portfolio.min.js',
-        path: path.resolve('build')
+        path: path.resolve('build'),
+        publicPath: "/"
+    },
+
+    devServer: {
+        historyApiFallback: true
     },
 
     // Plugins can be leveraged to perform a wider range of tasks like bundle optimization, etc

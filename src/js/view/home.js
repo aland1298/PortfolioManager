@@ -2,9 +2,11 @@ import React, {useEffect} from "react";
 import "../../sass/home.scss";
 import handleDropdown from "../handlers/handle-dropdown";
 
-const Home = () => {
+const Home = (props) => {
+
     useEffect(() => {
         document.title="Home";
+        props.setHeader("Home");
     })
 
     return (

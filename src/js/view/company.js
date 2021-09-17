@@ -1,8 +1,9 @@
 import React, {useEffect} from "react";
 
-const Company = () => {
+const Company = (props) => {
     useEffect(() => {
         document.title = "Company Dashboard"
+        props.setHeader("Company");
     })
 
     return (
