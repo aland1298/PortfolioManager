@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Alan",
     "ticker": [
       "AAPL",
@@ -9,6 +10,7 @@
     ]
   },
   {
+    "id": 2,
     "name": "Madison",
     "ticker": [
       "TSLA",
@@ -17,6 +19,7 @@
     ]
   },
   {
+    "id": 3,
     "name": "Tim",
     "ticker": [
       "JPM",
@@ -26,6 +29,7 @@
     ]
   },
   {
+    "id": 4,
     "name": "Seth",
     "ticker": [
       "APPL",
@@ -33,6 +37,7 @@
     ]
   },
   {
+    "id": 5,
     "name": "Mark",
     "ticker": [
       "TSLA",
@@ -40,6 +45,7 @@
     ]
   },
   {
+    "id": 6,
     "name": "Joe",
     "ticker": []
   }

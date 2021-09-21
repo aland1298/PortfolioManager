@@ -1,6 +1,8 @@
 import React, {useEffect} from "react";
 import "../../sass/home.scss";
 import handleDropdown from "../handlers/handle-dropdown";
+import Dropdown from "../components/dropdown";
+import ProfileContextProvider from "../context/profileContext";
 
 const Home = (props) => {
 
@@ -19,10 +21,9 @@ const Home = (props) => {
                     <img id="arrow-img" src="/src/img/arrow-down.svg" alt="dropdown arrow" />
                 </header>
                 <ul id="dropdown-container" className="dropdown" aria-label="submenu">
-                    <li>Alan</li>
-                    <li>Madison</li>
-                    <li>Ola</li>
-                    <li>Tim</li>
+                    <ProfileContextProvider>
+                        <Dropdown />
+                    </ProfileContextProvider>
                 </ul>
             </nav>
         </section>
