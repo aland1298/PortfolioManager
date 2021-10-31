@@ -1,0 +1,41 @@
+A slice contains a slice which defines all of the reducers and the initial state as well as the
+name of the slice which is a prefix for the action type ({type: search/setSearchTerm}).
+
+Example:
+
+    import { createSlice } from "@reduxjs/toolkit";
+    import {
+      addFavoriteRecipe,
+      removeFavoriteRecipe,
+    } from "../favoriteRecipes/favoriteRecipesSlice";
+    import { selectSearchTerm } from "../search/searchSlice";
+
+    const sliceOptions = {
+      name: "allRecipes",
+      initialState: {
+        recipes: [],
+        isLoading: false,
+        hasError: false
+      },
+      reducers: {},
+      extraReducers: {
+        // loadRecipes is the name of the action
+        [loadRecipes.pending]: (state, action) => {
+          state.isLoading = true;
+          state.hasError = false;
+        },
+        [loadRecipes.fulfilled]: (state, action) => {
+          state.recipes = action.payload;
+          state.isLoading = false;
+          state.hasError = false;
+        },
+        [loadRecipes.rejected]: (state, action) => {
+          state.isLoading = false;
+          state.hasError = true;
+        }
+      }
+    }
+
+    export const allRecipesSlice = createSlice(sliceOptions);
+
+    export default allRecipesSlice.reducer;

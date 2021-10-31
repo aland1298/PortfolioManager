@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
     // The entry object is where webpack looks to start building the bundle
-    entry: path.resolve(__dirname + '/src/js/app/StockPortfolio.js'),
+    entry: path.resolve(__dirname + '/src/js/index.js'),
 
     // Allow Webpack to process other types of files and convert them into valid modules that can be consumed by app
     module: {
@@ -44,7 +44,7 @@ module.exports = {
 
     // Tells Webpack where to emit the minified files it creates and how to name these files
     output: {
-        filename: 'stock-portfolio.min.js',
+        filename: 'index.min.js',
         path: path.resolve('build'),
         publicPath: "/"
     },
@@ -60,7 +60,7 @@ module.exports = {
         // Creates a new html file with the appropriate path for any dependencies
         new HtmlWebpackPlugin(
             {
-                template: path.resolve(__dirname + '/src/html/StockPortfolio.html'),
+                template: path.resolve(__dirname + '/src/html/index.html'),
                 path: path.resolve('build'),
                 inject: 'head'
             }
