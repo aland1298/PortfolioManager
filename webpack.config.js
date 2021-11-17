@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
     // The entry object is where webpack looks to start building the bundle
-    entry: path.resolve(__dirname + '/src/js/index.js'),
+    entry: path.resolve(__dirname + '/src/index.js'),
 
     // Allow Webpack to process other types of files and convert them into valid modules that can be consumed by app
     module: {
@@ -60,7 +60,7 @@ module.exports = {
         // Creates a new html file with the appropriate path for any dependencies
         new HtmlWebpackPlugin(
             {
-                template: path.resolve(__dirname + '/src/html/index.html'),
+                template: path.resolve(__dirname + '/src/index.html'),
                 path: path.resolve('build'),
                 inject: 'head'
             }
