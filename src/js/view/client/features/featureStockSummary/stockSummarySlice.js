@@ -1,28 +1,28 @@
 import React from "react";
 import {createSlice} from "@reduxjs/toolkit";
-import {getAllStockNames} from "./stockSummaryThunk";
+import {getAllStockSummary} from "./stockSummaryThunk";
 
 const initialData = {
-    stockNames: [''],
+    stockSummary: [{name: '', price: 0}],
     hasError: false,
     isLoading: false
 }
 
 const stockSummarySlice = createSlice({
-    name: 'stockNames',
+    name: 'stockSummary',
     initialState: initialData,
     reducers: {},
     extraReducers: {
-        [getAllStockNames.pending]: (state) => {
+        [getAllStockSummary.pending]: (state) => {
             state.isLoading = true;
             state.hasError = false;
         },
-        [getAllStockNames.fulfilled]: (state, action) => {
+        [getAllStockSummary.fulfilled]: (state, action) => {
             state.isLoading = false;
             state.hasError = false;
-            state.stockNames = action.payload;
+            state.stockSummary = action.payload;
         },
-        [getAllStockNames.rejected]: (state) => {
+        [getAllStockSummary.rejected]: (state) => {
             state.isLoading = false;
             state.hasError = true;
         }

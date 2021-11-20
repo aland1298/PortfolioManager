@@ -1,14 +1,17 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import {selectAllStockNames} from "./stockSummarySelectors";
+import {selectAllStockSummary} from "./stockSummarySelectors";
 
 const StockSummaryComponent = () => {
-    const stockNames = useSelector(selectAllStockNames);
+    const stockSummary = useSelector(selectAllStockSummary);
 
     return (
         <ul id='stockSummary-element-container'>
-            {stockNames.map((e, index) => (
-                <li className='stockSummary-element' key={index}>{e}</li>
+            {stockSummary.map((e, index) => (
+                <li className='stockSummary-element' key={index}>
+                    <header>{e.ticker}</header>
+                    <p>${e.price}</p>
+                </li>
             ))}
         </ul>
     )

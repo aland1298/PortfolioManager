@@ -1,1 +1,1 @@
-export const selectAllStockNames = (state) => state.stockNames.stockNames;
+export const selectAllStockSummary = (state) => state.stockSummary.stockSummary;

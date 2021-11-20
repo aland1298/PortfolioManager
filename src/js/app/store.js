@@ -7,6 +7,6 @@ export default configureStore({
     reducer: {
         header: headerReducer,
         clientDropdown: clientDropdownReducer,
-        stockNames: stockSummaryReducer
+        stockSummary: stockSummaryReducer
     }
 });

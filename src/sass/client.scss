@@ -39,10 +39,17 @@
       background-color: var(--primary-light-color);
       height: 25%;
       padding: 10px;
+      border: solid 2px green;
 
-      #stockSummary-container {
+      #stockSummary-element-container {
+        border: solid 2px yellow;
+        display: flex;
+        flex-direction: row;
+
         .stockSummary-element {
-          background-color: white;
+          border: solid 2px orange;
+          margin-right: 5px;
+          padding: 40px 80px 40px 80px;
         }
       }
     }
