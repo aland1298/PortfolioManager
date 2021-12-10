@@ -15,17 +15,28 @@
     gap: 10px;
     height: 90%;
 
+    h2 {
+      font-size: var(--subheader-font-size);
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: var(--paragraph-font-size);
+    }
+
     #clientDetails-container {
-      background-color: var(--primary-light-color);
+      background-color: var(--primary-dark-color);
       height: 50%;
-      padding: 10px;
+      padding: 15px;
       font-size: 13px;
-      
+      border-radius: 25px;
+
     }
     #portfolioSummary-container {
-      background-color: var(--primary-light-color);
+      background-color: var(--primary-dark-color);
       height: 50%;
-      padding: 10px;
+      padding: 15px;
+      border-radius: 25px;
     }
   }
 
@@ -35,13 +46,14 @@
     gap: 10px;
 
     #stockSummary-container {
-      background-color: var(--primary-light-color);
+      background-color: var(--primary-dark-color);
       padding: 10px;
       display: flex;
       justify-content: center;
+      border-radius: 25px;
 
       ::-webkit-scrollbar {
-        height: 12px;
+        height: 10px;
       }
 
       ::-webkit-scrollbar-track {
@@ -72,7 +84,7 @@
           flex-direction: column;
           align-items: center;
           user-select: none;
-          background-color: var(--primary-faint-color);
+          border: solid 2px var(--primary-faint-color);
           margin-bottom: 3px;
           border-radius: 25px;
 
@@ -80,10 +92,41 @@
       }
     }
     #portfolioDetails-container {
-      background-color: var(--primary-light-color);
+      background-color: var(--primary-dark-color);
       height: 75%;
       padding: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 25px;
 
+      h2 {
+        margin-bottom: 15px;
+        font-size: var(--subheader-font-size);
+      }
+
+      table {
+        font-size: var(--subheader-font-size);
+        width: 80%;
+
+        thead {
+          tr {
+            th {
+              text-align: left;
+              padding: 15px;
+
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 15px;
+            }
+          }
+        }
+      }
     }
   }
 }
