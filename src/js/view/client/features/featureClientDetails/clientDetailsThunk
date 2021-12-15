@@ -1,0 +1,10 @@
+import {createAsyncThunk} from "@reduxjs/toolkit";
+import {fetchClientData} from "../../../../api/fetchClientData";
+
+export const getClientDetails = createAsyncThunk(
+    "clientDetails/getClientDetails",
+    async (name) => {
+        const clientData = await fetchClientData();
+        return clientData.find(e => e.name === name).clientDetails;
+    }
+)

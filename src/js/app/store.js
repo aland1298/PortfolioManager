@@ -4,6 +4,7 @@ import clientDropdownReducer from '../view/home/features/featureClientDropdown/c
 import stockSummaryReducer from '../view/client/features/featureStockSummary/stockSummarySlice';
 import portfolioDetailsReducer from "../view/client/features/featurePortfolioDetails/portfolioDetailsSlice";
 import portfolioSummaryReducer from "../view/client/features/featurePortfolioSummary/portfolioSummarySlice";
+import clientDetailsReducer from "../view/client/features/featureClientDetails/clientDetailsSlice";
 
 export default configureStore({
     reducer: {
@@ -11,6 +12,7 @@ export default configureStore({
         clientDropdown: clientDropdownReducer,
         stockSummary: stockSummaryReducer,
         portfolioDetails: portfolioDetailsReducer,
-        portfolioSummary: portfolioSummaryReducer
+        portfolioSummary: portfolioSummaryReducer,
+        clientDetails: clientDetailsReducer
     }
 });
