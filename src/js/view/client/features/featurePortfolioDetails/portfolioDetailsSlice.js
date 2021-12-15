@@ -4,7 +4,7 @@ import {getAllStockDetails} from "./portfolioDetailsThunk";
 
 const initialData = {
     stock: [{
-        date: '',
+        date: 0,
         ticker: '',
         stockName: '',
         currPrice: 0
@@ -22,14 +22,10 @@ const portfolioDetailsSlice = createSlice({
             state.isLoading = true;
             state.hasError = false;
         },
-        [getAllStockDetails.fulfilled]: (state, payload) => {
+        [getAllStockDetails.fulfilled]: (state, action) => {
             state.isLoading = false;
             state.hasError = false;
-            console.log(state)
-            state.date = payload.date;
-            state.ticker = payload.ticker;
-            state.stockName = payload.stockName;
-            state.currPrice = payload.currPrice;
+            state.stock = action.payload;
         },
         [getAllStockDetails.rejected]: (state) => {
             state.isLoading = false;

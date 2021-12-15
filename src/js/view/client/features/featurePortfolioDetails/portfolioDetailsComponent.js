@@ -18,12 +18,14 @@ const PortfolioDetailsComponent = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>{stockDetails.date}</td>
-                        <td>{stockDetails.ticker}</td>
-                        <td>{stockDetails.stockName}</td>
-                        <td>{stockDetails.currPrice}</td>
-                    </tr>
+                    {stockDetails.map((e, index) => (
+                        <tr key={index}>
+                            <td key={"date" + e.ticker}>{e.date}</td>
+                            <td key={"ticker" + e.ticker}>{e.ticker}</td>
+                            <td key={"stockName" + e.stockName}>{e.stockName}</td>
+                            <td key={"currPrice" + e.currPrice}>${e.currPrice}</td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </>

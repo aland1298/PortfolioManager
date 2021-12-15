@@ -9,6 +9,7 @@ import PortfolioDetailsComponent from "./features/featurePortfolioDetails/portfo
 import {selectCurrentClientName} from "../home/features/featureClientDropdown/clientDropdownSelectors";
 import {getAllStockSummary} from "./features/featureStockSummary/stockSummaryThunk";
 import {getAllStockDetails} from "./features/featurePortfolioDetails/portfolioDetailsThunk";
+import {getPortfolioSummary} from "./features/featurePortfolioSummary/portfolioSummaryThunk";
 
 const Client = () => {
     const dispatch = useDispatch();
@@ -19,6 +20,7 @@ const Client = () => {
         dispatch(updateHeader('Client'));
         dispatch(getAllStockSummary(currName));
         dispatch(getAllStockDetails(currName));
+        dispatch(getPortfolioSummary(currName))
     }, [dispatch])
 
     return (

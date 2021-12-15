@@ -1,14 +1,15 @@
 import React from "react";
+import {useSelector} from "react-redux";
+import {selectPortfolioSummary} from "./portfolioSummarySelectors";
 
 const PortfolioSummaryComponent = () => {
+    const portfolioSummary = useSelector(selectPortfolioSummary);
+
     return (
         <>
-            <h2>Portfolio</h2>
+            <h2>Portfolio Summary</h2>
             <p>
-                Aa kwajdn wkjadnenfiuennfef nefn esknkljewnfienn lejknflennefl senfeiunfn elnfknfk ljsefn es
-                esfnsekfjnsefkjnselfnlseknflskenfkesn ksne.kfnsenfksenkjsenfkjsenfkjsenksenk nkjsnfkjesn fesf
-                ;ekfnsekfnksenfksenfkesnkjenfksenfksenfknsekfsenfkjsnfkjsnef esf;njeskfjsnekjfsnekjsenk efus
-                jsenkesn fkjesnfksenksnefkjnsekfjnsekjnfksnkf
+                {portfolioSummary}
             </p>
         </>
     )

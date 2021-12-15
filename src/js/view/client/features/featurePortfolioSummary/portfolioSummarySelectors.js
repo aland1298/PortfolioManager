@@ -1,0 +1,1 @@
+export const selectPortfolioSummary = (state) => state.portfolioSummary.summary;

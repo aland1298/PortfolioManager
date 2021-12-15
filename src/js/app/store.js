@@ -3,12 +3,14 @@ import headerReducer from '../view/home/features/featureHeader/headerSlice';
 import clientDropdownReducer from '../view/home/features/featureClientDropdown/clientDropdownSlice';
 import stockSummaryReducer from '../view/client/features/featureStockSummary/stockSummarySlice';
 import portfolioDetailsReducer from "../view/client/features/featurePortfolioDetails/portfolioDetailsSlice";
+import portfolioSummaryReducer from "../view/client/features/featurePortfolioSummary/portfolioSummarySlice";
 
 export default configureStore({
     reducer: {
         header: headerReducer,
         clientDropdown: clientDropdownReducer,
         stockSummary: stockSummaryReducer,
-        portfolioDetails: portfolioDetailsReducer
+        portfolioDetails: portfolioDetailsReducer,
+        portfolioSummary: portfolioSummaryReducer
     }
 });
