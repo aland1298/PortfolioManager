@@ -9,7 +9,7 @@ import {createAsyncThunk} from "@reduxjs/toolkit";
  * @type {AsyncThunk<*[], void, {}>}
  */
 export const getAllStockSummary = createAsyncThunk(
-    'stockNames/getAllNames',
+    'stockSummary/getAllNames',
     async (name) => {
         // Get all tickers for the client name
         const clientData = await fetchClientData();

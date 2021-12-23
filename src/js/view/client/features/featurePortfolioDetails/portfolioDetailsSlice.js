@@ -7,7 +7,10 @@ const initialData = {
         date: 0,
         ticker: '',
         stockName: '',
-        currPrice: 0
+        currPrice: 0,
+        pricePurchased: 0,
+        long: 0,
+        short: 0
     }],
     isLoading: false,
     hasError: false
@@ -26,6 +29,7 @@ const portfolioDetailsSlice = createSlice({
             state.isLoading = false;
             state.hasError = false;
             state.stock = action.payload;
+
         },
         [getAllStockDetails.rejected]: (state) => {
             state.isLoading = false;

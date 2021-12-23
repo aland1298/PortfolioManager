@@ -21,8 +21,8 @@ const Client = () => {
         dispatch(updateHeader('Client'));
         dispatch(getAllStockSummary(currName));
         dispatch(getAllStockDetails(currName));
-        dispatch(getPortfolioSummary(currName))
-        dispatch(getClientDetails(currName))
+        dispatch(getPortfolioSummary(currName));
+        dispatch(getClientDetails(currName));
     }, [dispatch])
 
     return (
