@@ -127,6 +127,13 @@
               font-size: var(--note-font-size);
             }
           }
+
+          .pnl {
+            color: limegreen;
+            &.lose {
+              color: red;
+            }
+          }
         }
       }
     }

@@ -1,0 +1,12 @@
+const handlePnL = () => {
+    const pnl = document.getElementsByClassName("pnl");
+
+
+    for (let i = 0; i < pnl.length; i++) {
+        if(pnl.item(i).innerHTML.charAt(0) === '-')
+            pnl.item(i).className = "pnl lose";
+    }
+
+}
+
+export default handlePnL;

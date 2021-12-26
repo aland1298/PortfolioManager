@@ -1,6 +1,6 @@
 import React from "react";
 import {Route, Switch} from "react-router-dom";
-import MainNav from "../components/nav-bar";
+import MainNav from "../../util/components/nav-bar";
 import Client from "../view/client/client";
 import Company from "../view/company/company";
 import Home from "../view/home/home";
